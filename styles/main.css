@@ -1,0 +1,96 @@
+/* global */
+
+body {
+    background-color: rgb(251, 165, 208);
+}
+
+/* layout */
+
+.container {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-wrapper {
+    width: 200px;
+    height: 225px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* buttons */
+
+.btn button {
+    background: none;
+    border: none;
+    width: 90px;
+    height: auto;
+    margin: 5px;
+    opacity: .75;
+}
+
+.btn button:hover svg .d {
+    fill: aqua;
+}
+
+.reset button {
+    width: 90px;
+    margin: 5px;
+    border: none;
+    color: rgb(251, 165, 208);
+}
+
+.reset button:hover {
+    color: aqua;
+}
+
+/* svg */
+
+.svg {
+    width: 45vw;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.svg .earL1, .earR1, .earL2, .earR2, .earL3, .earR3, .eyeL1, .eyeR1, .eyeL2, .eyeR2, .eyeL3, .eyeR3, .nose1, .nose2, .nose3, .mouth1, .mouth2, .mouth3, .hat1, .hat2, .hat3 {
+    opacity: 0;
+}
+
+/* media queries */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .flex-wrapper {
+        width: 350px;
+        height: 100px;    
+        margin-top: 20px;    
+    }
+
+    .btn button {
+        background: none;
+        border: none;
+        width: 70px;
+        height: auto;
+        margin: 1px;
+        opacity: .75;
+    }
+
+    .svg {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
